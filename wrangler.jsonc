@@ -1,0 +1,12 @@
+{
+  "name": "jacquelot",
+  "main": "middleware.js",
+  "compatibility_date": "2026-01-01",
+  "assets": {
+    "directory": "./pub",
+    "not_found_handling": "404-page"
+  },
+  "vars": {
+    "A_VAR": "is_unsecure_here"
+  }
+}
