@@ -1,0 +1,6 @@
+# https://github.com/asciidoctor/asciidoctor-pdf/blob/main/docs/theming-guide.adoc#validate-the-font
+ruby validate-font.rb junicode-1.002/Junicode.ttf
+ruby validate-font.rb junicode-1.002/Junicode-Bold.ttf
+ruby validate-font.rb junicode-1.002/Junicode-Italic.ttf
+ruby validate-font.rb junicode-1.002/Junicode-BoldItalic.ttf
+ruby validate-font.rb junicode-1.002/FoulisGreek.ttf

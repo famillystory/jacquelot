@@ -1,0 +1,115 @@
+#toc {
+  page: tableofcontents;
+}
+
+/*
+.h-chapter {
+  color: #006000
+  content: string(current-chapter-name, first);
+}
+.h-chapter-num {
+  color: #bf0000
+  content: string(current-chapter-num, first);
+}
+.h-sub-chapter {
+  color: #000060
+  content: string(current-sub-chapter, first)
+}
+
+.chapter-title-header {
+  width: 2cm;
+  position: running(runningChapterTitle)
+}
+.sub-chapter-title-header {
+  width: 2cm;
+  position: running(runningSubChapterTitle);
+}
+
+h3>.anchor~.link.green { string-set: current-chapter-name content() }
+h3>.anchor~.link.red { string-set: current-chapter-num content() }
+*/
+
+h3>.anchor~.link { string-set: current-chapter content() }
+h4>.anchor~.link { string-set: current-sub-chapter content() }
+/* .preamble { string-set: data-page attr(data-page) }
+.maroon { string-set: current-tome content() } */
+
+@page contenu:left {
+
+  @bottom-right {
+    content: counter(page);
+    font-size: 0.8rem;
+    padding: 10pt 0 0 0;
+    border-top: .1pt solid #ADD8E6;
+  }
+  @top-center,@bottom-center {
+    /* content: element(runningSubChapterTitle) */
+    content: string(current-sub-chapter, first);
+    font-size: 0.8rem;
+    margin: 10pt 0 10pt 0;
+    border-bottom: .1pt solid #ADD8E6;
+    padding-bottom: 5px
+  }
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: .1pt solid #ADD8E6;
+  }
+}
+/* @page :right:not(:first) {*/
+
+@page contenu:right {
+
+  @bottom-right {
+    margin: 10pt 0 30pt 0;
+    border-top: .1pt solid #ADD8E6;
+  }
+  @top-center {
+    /*content: element(runningChapterTitle)*/
+    content: string(current-chapter, first);
+    font-size: 0.8rem;
+    margin: 10pt 0 10pt 0;
+    border-bottom: .1pt solid #ADD8E6;
+    padding-bottom: 5px
+  }
+  @bottom-left {
+    content: counter(page);
+    font-size: 0.8rem;
+    padding: 10pt 0 0 0;
+    border-top: .1pt solid #ADD8E6;
+  }
+}
+
+@page :first .pagedjs_page.pagedjs_first_page {
+//  background-size: contain;
+//  background-image: url("../../../img/coverI.jpg");
+  @bottom-right {
+    margin: 0;
+    padding: 0;
+    border: none;
+    content: normal;
+  }
+  @top-center {
+    border-bottom: 0pt solid #0001;
+  }
+  @bottom-left {
+    margin: 0;
+    padding: 0;
+    border: none;
+    content: normal;
+  }
+}
+
+@page tableofcontents {
+  @bottom-right {
+    margin: 0;
+    padding: 0;
+    border: none;
+    content: normal;
+  }
+  @bottom-left {
+    margin: 0;
+    padding: 0;
+    border: none;
+    content: normal;
+  }
+}
