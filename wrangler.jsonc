@@ -2,7 +2,7 @@
   "name": "jacquelot",
   "pages_build_output_dir": ".",
   "compatibility_date": "2026-10-09",
-  "secrets": {
-    "required": ["JACQ_USER", "JACQ_PASSWORD"]
-  }
+  //"secrets": {
+  //  "required": ["JACQ_USER", "JACQ_PASSWORD"]
+  //}
 }
