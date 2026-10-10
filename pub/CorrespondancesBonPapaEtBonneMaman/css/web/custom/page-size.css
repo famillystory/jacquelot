@@ -1,7 +1,0 @@
-/* Dimension physique unique du livre : lue à la fois par le PDF
-   (via :stylesheet: dans livre-demo.adoc) et par la vue animée
-   (via template.js -> readCss). Ne PAS dupliquer cette règle ailleurs :
-   c'est la seule source de vérité pour la taille de page. */
-@page {
-  size: 15.6cm 23.39cm;
-}
